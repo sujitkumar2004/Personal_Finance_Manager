@@ -1,0 +1,188 @@
+# 💰 Personal Finance Manager
+
+A full-featured Spring Boot web application designed to help users manage their personal finances by tracking incomes, expenses, savings goals, and generating analytical reports.
+
+[![Java](https://img.shields.io/badge/Java-17+-blue.svg)](https://openjdk.org/)
+[![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.x-brightgreen.svg)](https://spring.io/projects/spring-boot)
+[![JUnit 5](https://img.shields.io/badge/Tests-JUnit_5-green)](https://junit.org/junit5/)
+[![Coverage](https://img.shields.io/badge/Test%20Coverage-98%25-yellowgreen)]()
+[![Docker](https://img.shields.io/badge/Deployed-Docker-blue)](https://www.docker.com/)
+[![Render](https://img.shields.io/badge/Live_Render-Available-green)](https://your-live-url-here.com)
+
+---
+
+## 🚀 Live Demo
+
+🔗 **Deployed API**: [https://your-live-url-here.com/api](https://your-live-url-here.com/api)
+
+---
+
+## 📸 Preview
+
+![Finance Manager Dashboard](assets/finance_manager_dashboard.png)
+
+---
+
+## 🛠️ Features
+
+### ✅ User Management & Authentication
+- Secure registration, login, and logout
+- Session-based authentication using cookies
+- Full data isolation across users
+
+### 💸 Transaction Management
+- Add, view, update, delete financial transactions
+- Filter by date, category, and type (INCOME/EXPENSE)
+
+### 🗂️ Category Management
+- Built-in default categories (e.g., Salary, Food, Rent)
+- Add/delete custom categories
+
+### 🎯 Savings Goals
+- Create and track savings goals
+- Auto-progress tracking from income/expenses
+- View completion % and remaining amount
+
+### 📊 Reports & Analytics
+- Monthly and yearly breakdown of incomes/expenses
+- Net savings and category-wise reports
+
+---
+
+## 🧪 Testing
+
+- ✔️ **98% Unit Test Coverage**
+- Frameworks used: `JUnit 5`, `Mockito`
+- All business logic, validations, and services are covered
+- Successfully passed [financial_manager_tests.sh](financial_manager_tests.sh) with 100% success rate
+
+---
+
+## 📦 Tech Stack
+
+| Layer             | Technology                   |
+|------------------|------------------------------|
+| Language          | Java 17                      |
+| Framework         | Spring Boot 3.x              |
+| Security          | Spring Security              |
+| Build Tool        | Maven                        |
+| Database          | H2 (in-memory)               |
+| Testing           | JUnit 5, Mockito             |
+| Containerization  | Docker                       |
+| Deployment        | Render                       |
+
+---
+
+## 🧱 Architecture
+
+- Layered: `Controller → Service → Repository`
+- DTO-based request/response mapping
+- Centralized error handling with `@ControllerAdvice`
+- Input validations with clear HTTP responses
+
+---
+
+## 🐳 Docker Support
+
+### Build Docker Image
+```bash
+docker build -t personal-finance-manager .
+```
+
+### Run Container
+```bash
+docker run -d -p 8080:8080 personal-finance-manager
+```
+
+### Push to Docker Hub (optional)
+```bash
+docker tag personal-finance-manager your-dockerhub-username/personal-finance-manager
+docker push your-dockerhub-username/personal-finance-manager
+```
+
+---
+
+## 🌍 Deployment on Render
+
+- Dockerized image deployed on [Render](https://render.com)
+- Persistent deployment with public API access
+- Use API endpoints with the base URL: `https://your-live-url-here.com/api`
+
+---
+
+## 📘 API Overview
+
+### 🔐 Auth Endpoints
+- `POST /api/auth/register`
+- `POST /api/auth/login`
+- `POST /api/auth/logout`
+
+### 💵 Transactions
+- `GET /api/transactions`
+- `POST /api/transactions`
+- `PUT /api/transactions/{id}`
+- `DELETE /api/transactions/{id}`
+
+### 📁 Categories
+- `GET /api/categories`
+- `POST /api/categories`
+- `DELETE /api/categories/{name}`
+
+### 🎯 Goals
+- `GET /api/goals`
+- `POST /api/goals`
+- `PUT /api/goals/{id}`
+- `DELETE /api/goals/{id}`
+
+### 📈 Reports
+- `GET /api/reports/monthly/{year}/{month}`
+- `GET /api/reports/yearly/{year}`
+
+---
+
+## 🧪 Run Tests
+
+```bash
+mvn test
+```
+
+---
+
+## 📂 Project Structure
+
+```
+src/
+ └── main/
+     ├── java/
+     │    └── com.yourdomain.finance/
+     │          ├── controller/
+     │          ├── service/
+     │          ├── repository/
+     │          ├── model/
+     │          ├── dto/
+     │          └── config/
+     └── resources/
+         └── application.properties
+```
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Please fork the repo and open a pull request.
+
+---
+
+## 📝 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+## 🙋‍♂️ Author
+
+**Sujit Kumar**  
+📧 [sujitkumarrajput2004@gmail.com](mailto:sujitkumarrajput2004@gmail.com)  
+🔗 [GitHub Profile](https://github.com/sujitkumar2004)
+
+---
