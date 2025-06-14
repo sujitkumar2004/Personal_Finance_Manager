@@ -5,9 +5,10 @@ A full-featured Spring Boot web application designed to help users manage their 
 [![Java](https://img.shields.io/badge/Java-17+-blue.svg)](https://openjdk.org/)
 [![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.x-brightgreen.svg)](https://spring.io/projects/spring-boot)
 [![JUnit 5](https://img.shields.io/badge/Tests-JUnit_5-green)](https://junit.org/junit5/)
-[![Coverage](https://img.shields.io/badge/Test%20Coverage-98%25-yellowgreen)]()
+[![Coverage](https://img.shields.io/badge/Test%20Coverage-98%25-yellowgreen)](![image](https://github.com/user-attachments/assets/446ce643-b452-4e2f-993c-6fbf71d2345a)
+)
 [![Docker](https://img.shields.io/badge/Deployed-Docker-blue)](https://www.docker.com/)
-[![Render](https://img.shields.io/badge/Live_Render-Available-green)](https://your-live-url-here.com)
+[![Render](https://img.shields.io/badge/Live_Render-Available-green)](https://personal-finance-manager-9ja1.onrender.com)
 
 ---
 
@@ -101,7 +102,7 @@ docker push your-dockerhub-username/personal-finance-manager
 
 ## 🌍 Deployment on Render
 
-- Dockerized image deployed on [Render](https://render.com)
+- Dockerized image deployed on [Render](https://personal-finance-manager-9ja1.onrender.com)
 - Persistent deployment with public API access
 - Use API endpoints with the base URL: `https://your-live-url-here.com/api`
 
